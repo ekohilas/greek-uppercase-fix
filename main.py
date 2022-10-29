@@ -2,14 +2,10 @@
     
 def main():
     text = input()
-    convert(text)
+    converted_text = convert(text)
+    print(converted_text)
 
 def convert(text):
-    g = "ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ"
-    e = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-
-    gl = g.lower()
-    el = e.lower()
 
     english_to_greek = {
         "A": "Α",
@@ -28,7 +24,11 @@ def convert(text):
         "X": "Χ",
     }
 
-    print(text.translate(str.maketrans(english_to_greek)).lower())
+    return (
+        text.translate(
+            str.maketrans(english_to_greek)
+        ).lower()
+    )
 
 if __name__ == "__main__":
     main()
