@@ -1,3 +1,3 @@
 # Greek Uppercase Fix
 
-A script to fix Greek uppercase text.
+A script to fix all uppercase Greek text that uses both english and greek scripts.
